@@ -22,7 +22,7 @@ export default function Home() {
           );
         })
       ) : (
-        <div>no data</div>
+        <div>No Data</div>
       )}
     </div>
   );
