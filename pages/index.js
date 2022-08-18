@@ -10,6 +10,13 @@ export default function Home() {
 
   return (
     <div>
+      <div style={{display:'flex',justifyContent:'center',flexDirection:'column',alignItems:'center'}}>
+
+      <h1 style={{fontSize:'30px'}}>alchemy lens show</h1>
+      <h3>author: foolsogood</h3>
+      </div>
+
+      <div>
       {data ? (
         data.recommendedProfiles.map((profile, index) => {
           console.log(`Profile ${index}:`, profile);
@@ -24,6 +31,8 @@ export default function Home() {
       ) : (
         <div>no data</div>
       )}
+      </div>
+      
     </div>
   );
 }
